@@ -11,6 +11,8 @@
     <modules>
         <module>producer-glue-schema-registry-avro</module>
         <module>consumer-glue-schema-registry-avro</module>
+        <module>producer-glue-schema-registry-json</module>
+        <module>consumer-glue-schema-registry-json</module>
     </modules>
 
     <properties>
