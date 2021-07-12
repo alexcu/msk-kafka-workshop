@@ -215,6 +215,7 @@ Resources:
         - arn:aws:iam::aws:policy/AWSCloudFormationReadOnlyAccess
         - arn:aws:iam::aws:policy/AmazonS3FullAccess
         - arn:aws:iam::aws:policy/AWSCertificateManagerPrivateCAFullAccess
+        - arn:aws:iam::aws:policy/AWSGlueSchemaRegistryFullAccess
   EC2InstanceProfile:
     Type: AWS::IAM::InstanceProfile
     Properties: 
