@@ -13,6 +13,7 @@
         <module>consumer-glue-schema-registry-avro</module>
         <module>producer-glue-schema-registry-json</module>
         <module>consumer-glue-schema-registry-json</module>
+        <module>producers-consumers</module>
     </modules>
 
     <properties>

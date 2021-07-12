@@ -1,0 +1,34 @@
+Redis Sink Connector
+https://github.com/jcustenborder/kafka-connect-redis
+
+
+Kafka Connect Server Config
+/Users/vkbajaj/softwares/kafka_2.13-2.7.1/config/connect-distributed-0.properties
+/Users/vkbajaj/softwares/kafka_2.13-2.7.1/config/connect-distributed-1.properties
+
+Connector Plugins
+/Users/vkbajaj/hands-on/intelij-projects/vikafka-workshop/connect-plugins
+curl -s localhost:8083/connector-plugins
+curl -s localhost:8083/connectors
+
+cd connect-startup
+curl -X PUT -H 'Content-Type:application/json' http://localhost:8083/connectors/source-datagen/config -d @connect-datagen-source.json
+
+docker run --name rdb -p 6379:6379 redis
+docker exec -it rdb bash
+redis-cli --stat
+docker exec rdb sh -c "redis-cli -n 1 KEYs '*' "
+
+
+curl -X POST -H 'Content-Type: application/json' --data @connect-redis-sink.json http://localhost:8083/connectors
+
+__consumer_offsets
+connect-configs
+connect-offsets
+connect-status
+distributed-test
+
+
+
+
+curl -X PUT -H 'Content-Type:application/json' http://localhost:8083/connectors/source-datagen/config -d @connect-datagen-users-source.json
