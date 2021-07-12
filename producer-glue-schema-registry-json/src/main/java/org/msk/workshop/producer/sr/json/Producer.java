@@ -70,11 +70,11 @@ public class Producer {
         Properties producerConfig = this.buildProducerConfig();
         int numberOfMessages = Integer.valueOf(this.applicationProperties.getProperty("NUMBER_OF_MESSAGES")).intValue();
         String topic = this.applicationProperties.getProperty("TOPIC");
-        logger.info("reading customer avro schema...");
+        /*logger.info("reading customer avro schema...");
         ClassLoader classLoader = getClass().getClassLoader();
         InputStream inputStream = classLoader.getResourceAsStream("Listings.avsc");
         Schema schema_listing = new Parser().parse(inputStream);
-        int counter = 0;
+        int counter = 0;*/
 
         String jsonSchema = "{\n" + "        \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n"
                 + "        \"type\": \"object\",\n" + "        \"properties\": {\n" + "          \"employee\": {\n"

@@ -1,3 +1,5 @@
-consumer-glue-schema-registry-avro/target
-producer-glue-schema-registry-avro/target
+consumer-glue-schema-registry-avro/target/*
+producer-glue-schema-registry-avro/target/*
+consumer-glue-schema-registry-json/target/*
+producer-glue-schema-registry-json/target/*
 .idea
