@@ -1,0 +1,9 @@
+{
+  "namespace": "Listings.avro",
+  "type": "record",
+  "name": "Listing",
+  "fields": [
+    {"name": "listing_key", "type": "string"},
+    {"name": "listing_detail", "type": "string"}
+  ]
+}
